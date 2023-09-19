@@ -1,0 +1,74 @@
+*::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: #fff;
+}
+
+.item{
+    border: 3px solid #fff;
+    padding: 40px;
+}
+
+.container{
+    display: grid; 
+    gap: 20px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+#first{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    background-image: url(sebastian-vettel-GOAT.jpg);
+    background-size: cover;
+    background-position: 50%;
+}
+
+#second{
+    grid-column-start: 5;
+    grid-column-end:7;
+    grid-row-start:1;
+    grid-row-end:6;
+    background-image: url(ronaldo.jpg);
+    background-size: cover;
+    background-position: 50%;
+}
+
+#third{
+    grid-column-start: 1;
+    grid-column-end:4;
+    background-image: url(real-madrid-squad.jpg);
+    background-size: cover;
+    background-position: 50%;
+}
+
+#fourth{
+    grid-column-start: 4;
+    grid-row-start: 4;
+    background-image: url(soccer-2697624_1920.jpg);
+    background-size: cover;
+    background-position: 50%;
+}
+
+#fifth{
+    grid-column-start: 1;
+    grid-row-end: 6;
+    background-image: url(manchester-united.jpg);
+    background-size: cover;
+    background-position: 50%;
+}
+
+#sixth{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    background-image: url(lewis-hamilton.jpg);
+    background-size: cover;
+    background-position: 50%;
+}
